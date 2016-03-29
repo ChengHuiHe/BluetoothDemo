@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="6000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SCTViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g2h-yP-ll8"/>
+                        <viewControllerLayoutGuide type="bottom" id="d6W-19-f3Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正在连接..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdt-J4-b7N">
+                                <rect key="frame" x="20" y="103" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="33.2°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="70" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-ws-0C2">
+                                <rect key="frame" x="5" y="251" width="310" height="168"/>
+                                <color key="backgroundColor" red="1" green="0.85317091089999997" blue="0.94328742409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="WfP-CJ-gzT"/>
+                                    <constraint firstAttribute="width" constant="310" id="xYI-US-nPf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WfP-CJ-gzT"/>
+                                        <exclude reference="xYI-US-nPf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WfP-CJ-gzT"/>
+                                        <include reference="xYI-US-nPf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cdt-J4-b7N" secondAttribute="trailing" id="E6a-qb-RNU"/>
+                            <constraint firstItem="fTI-ws-0C2" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="FrD-Va-OHR"/>
+                            <constraint firstItem="fTI-ws-0C2" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Ikr-6Y-6Zf"/>
+                            <constraint firstAttribute="trailing" secondItem="fTI-ws-0C2" secondAttribute="trailing" constant="45" id="ZSf-aE-nNh"/>
+                            <constraint firstItem="Cdt-J4-b7N" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="b8H-m1-6q2"/>
+                            <constraint firstItem="fTI-ws-0C2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="45" id="knK-vL-W47"/>
+                            <constraint firstItem="Cdt-J4-b7N" firstAttribute="top" secondItem="g2h-yP-ll8" secondAttribute="bottom" constant="50" id="phb-eZ-Srn"/>
+                            <constraint firstItem="fTI-ws-0C2" firstAttribute="top" secondItem="Cdt-J4-b7N" secondAttribute="bottom" constant="60" id="ydk-3O-aAa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="E6a-qb-RNU"/>
+                                <exclude reference="b8H-m1-6q2"/>
+                                <exclude reference="phb-eZ-Srn"/>
+                                <exclude reference="FrD-Va-OHR"/>
+                                <exclude reference="Ikr-6Y-6Zf"/>
+                                <exclude reference="ZSf-aE-nNh"/>
+                                <exclude reference="knK-vL-W47"/>
+                                <exclude reference="ydk-3O-aAa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="E6a-qb-RNU"/>
+                                <include reference="b8H-m1-6q2"/>
+                                <include reference="phb-eZ-Srn"/>
+                                <include reference="FrD-Va-OHR"/>
+                                <include reference="Ikr-6Y-6Zf"/>
+                                <include reference="ZSf-aE-nNh"/>
+                                <include reference="knK-vL-W47"/>
+                                <include reference="ydk-3O-aAa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="Cdt-J4-b7N" id="uph-sH-aJy"/>
+                        <outlet property="temperatureLabel" destination="fTI-ws-0C2" id="ME9-B7-txF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499.5" y="358.5"/>
+        </scene>
+    </scenes>
+</document>
